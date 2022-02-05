@@ -1,0 +1,8 @@
+<?php 
+
+    define("TWILIO_ACCOUNT_SID", "ACb900e6ad91f47a91933303d5b2b5c817");
+    define("TWILIO_AUTH_TOKEN", "1a94970b7ea098434cd369faf3445f94");
+    define("TWILIO_PHONE_NUMBER", "+12319036520");
+
+?>
+

@@ -42,7 +42,7 @@ include_once '../header.php';
                                 $total_mas = $qua * $gram_unit;
                                 $date = $row['date_added'];
                                 $owner = $row['hosp_name'];
-                                $approve = '<a href="approve.php?id=' . $id . '" class="btn btn-link"><i class="fas fa-edit"></i></a>';
+                                $approve = '<a href="approve.php?id=' . $id . '" class="btn btn-link"><i class="fas fa-thumbs-up"></i> Approve</a>';
                         ?>
                                 <tr>
                                     <td><?= $no++; ?></td>

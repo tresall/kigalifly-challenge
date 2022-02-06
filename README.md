@@ -1,13 +1,3 @@
-- [Kigali Fly Challenge](#kigali-fly-challenge)
-  - [About KigaliFly](#about-kigalifly)
-    - [About project](#about-project)
-      - [What are we going to build](#what-are-we-going-to-build)
-        - [Built with](#built-with)
-- [Getting Started](#getting-started)
-  - [Prerequisites:](#prerequisites)
-    - [Installation](#installation)
-      - [Usage](#usage)
-- [Contact](#contact)
 # Kigali Fly Challenge
 
 ##  About KigaliFly

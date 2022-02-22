@@ -17,14 +17,13 @@ if ($result->num_rows > 0) {
         $hosp = $oprtr['hosp_name'];
         $names = $oprtr['names'];
         $phn = $oprtr['phone_nbr'];
-        $last = $oprtr['last_login'];
 
         $_SESSION['user_type'] = 'doctor';
         $_SESSION['docid'] = $id;
         $_SESSION['hosp'] = $hosp;
         $_SESSION['names'] = $names;
 
-        header('location: ../doctor/');
+        echo '<meta http-equiv="refresh" content="3; url=../doctor/">';
     }
 } else {
     echo '<div style="margin: 30%;" class="alert mt-5 w-25 alert-danger">

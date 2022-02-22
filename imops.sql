@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 05, 2022 at 01:09 PM
+-- Generation Time: Feb 17, 2022 at 07:59 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.0.15
 
@@ -55,17 +55,19 @@ CREATE TABLE `messages` (
   `msg_id` int(11) NOT NULL,
   `sndr_nm` varchar(50) NOT NULL,
   `sndr_mail` varchar(255) NOT NULL,
-  `sndr_msg` text NOT NULL,
-  `twl_id` text NOT NULL
+  `sndr_msg` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `messages`
 --
 
-INSERT INTO `messages` (`msg_id`, `sndr_nm`, `sndr_mail`, `sndr_msg`, `twl_id`) VALUES
-(1, 'hfgf', 'alaintresorcyusa683@gmail.com', 'hhhhh', 'SMd4a3e77ad6d14c57aa06956d7ac99350'),
-(2, 'Cyusa Alain Tresor', 'alaintresorcyusa683@gmail.com', 'Hello teting', 'SMac9c7ee3494e4f33bcb5a4dfdbf216e6');
+INSERT INTO `messages` (`msg_id`, `sndr_nm`, `sndr_mail`, `sndr_msg`) VALUES
+(1, 'hfgf', 'alaintresorcyusa683@gmail.com', 'hhhhh'),
+(2, 'Cyusa Alain Tresor', 'alaintresorcyusa683@gmail.com', 'Hello teting'),
+(3, 'Testing 1', 'tresorcyusadev@gmail.com', 'Hello testing message service'),
+(4, 'Cyusa Alain Tresor', 'alaintresorcyusa683@gmail.com', 'h'),
+(5, 'Cyusa Alain Tresor', 'alaintresorcyusa683@gmail.com', 'Hello Testing....');
 
 -- --------------------------------------------------------
 
@@ -108,7 +110,7 @@ CREATE TABLE `orders` (
 
 INSERT INTO `orders` (`order_id`, `prod_id`, `quantity`, `doc_id`, `order_date`, `received`) VALUES
 (1, 1, 10, 1, '2022-02-05 11:52:44', 0),
-(2, 2, 2, 1, '2022-02-05 11:55:51', 0),
+(2, 2, 2, 1, '2022-02-05 11:55:51', 1),
 (3, 4, 8, 2, '2022-02-05 11:56:25', 1),
 (4, 4, 1, 1, '2022-02-05 14:04:52', 0),
 (5, 1, 3, 2, '2022-02-05 14:05:42', 1);
@@ -137,7 +139,8 @@ INSERT INTO `products` (`prod_id`, `prod_name`, `quantity`, `gram_unit`, `total_
 (1, 'Parcetamol', 387, 100, '38700', '2022-02-05 11:44:29', 1),
 (2, 'Aspirin', 18, 50, '900', '2022-02-05 11:44:49', 1),
 (3, 'Quartem', 100, 80, '8000', '2022-02-05 11:45:07', 0),
-(4, 'Fenelga', 91, 40, '3640', '2022-02-05 11:45:22', 1);
+(4, 'Fenelga', 91, 40, '3640', '2022-02-05 11:45:22', 1),
+(5, 'gjgh', 2, 6, '12', '2022-02-05 17:29:55', 0);
 
 --
 -- Indexes for dumped tables
@@ -187,7 +190,7 @@ ALTER TABLE `doctor`
 -- AUTO_INCREMENT for table `messages`
 --
 ALTER TABLE `messages`
-  MODIFY `msg_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `msg_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `operators`
@@ -205,7 +208,7 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `prod_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `prod_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

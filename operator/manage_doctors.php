@@ -68,13 +68,7 @@ include_once '../header.php';
 <script src="../js/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/jquery.dataTables.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/dataTables.bootstrap4.min.js"></script>
-<script >
-    $(document).ready( function () {
-    $('#table-prod').DataTable({
-        select: true
-    });
-} );
-</script>
+
 </body>
 
 </html>

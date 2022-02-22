@@ -30,7 +30,7 @@ include_once '../header.php';
                     </thead>
                     <tbody>
                         <?php
-                        $sel = "SELECT * FROM products, orders, doctor WHERE products.prod_id = orders.prod_id AND doctor.doc_id = orders.doc_id ORDER BY order_id DESC";
+                        $sel = "SELECT * FROM products, orders, doctor WHERE products.prod_id = orders.prod_id AND doctor.doc_id = orders.doc_id AND orders.received=0 ORDER BY order_id DESC";
                         $que = $c->query($sel);
                         if ($que->num_rows > 0) {
                             $no = 1;
